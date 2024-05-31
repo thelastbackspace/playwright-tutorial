@@ -85,3 +85,19 @@ npx playwright test homePageTest.spec.js
 ```
 npx playywright test homePageTest.spec.js --debug
 ```
+
+## Locating Elements in playwright
+
+1. You can locate the element with property
+2. You can also use CSS selectors
+3. You can also use x-path
+
+you can locate the element using the following line:
+
+```
+await page.locator('locator').click()
+```
+
+```
+await page.click('locator')
+```
