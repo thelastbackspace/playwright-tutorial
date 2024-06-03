@@ -16,7 +16,7 @@ test("locators", async ({ page }) => {
 
 	// Method 2
 	await page.fill(".new-todo", "Learn React");
-
+E
 	// Simulate pressing the Enter key
 	await page.keyboard.press("Enter");
 

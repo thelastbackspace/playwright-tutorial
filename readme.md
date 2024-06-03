@@ -10,24 +10,24 @@ Why should we use playwright:
 
 ## Features of playwright
 
-1. It is free and open source
-2. It supports multiple browsers
-3. It supports multiple languages
-4. It supports multiple OS
-5. Easy setup & configuration
-6. We can automate functional test cases & API
-7. It supports accessibility settings. This can be enabled by using 3rd party plugin
-8. Generate reports using inbuilt functionality
-9. It supports CI, CD, Docker
-10. It supports parallel testing
-11. It has auto wait feature. This is benefitical when you face synchronization problems while executing the test case. In simple words, it will wait for elements or sections to load
-12. It also has built in assertions
-13. It supports multi-tab and multi-window
-14. It supports iframe and shadow dom elements
-15. It also supports paramaters
-16. It also supports mobile device emultaion
-17. It is comparatively fasted than competitors
-18. It supports manual script writing and automatic scripting
+1. Free and open-source
+2. Supports multiple browsers (Chromium, Webkit, Firefox)
+3. Supports multiple languages (JavaScript, TypeScript, Java, Python, C#)
+4. Supports multiple operating systems (Windows, Mac, Linux)
+5. Easy setup and configuration
+6. Automates functional test cases and APIs
+7. Supports accessibility testing (with third-party plugins)
+8. Generates reports using built-in functionality
+9. Integrates with CI/CD and Docker
+10. Enables parallel testing
+11. Offers auto-wait functionality for synchronization during test execution
+12. Includes built-in assertions for test verification
+13. Supports multi-tab and multi-window testing
+14. Handles iframe and shadow DOM elements
+15. Accommodates test parameters
+16. Enables mobile device emulation
+17. Relatively faster than competitors
+18. Supports both manual and automatic script writing
 
 ## Comparision between Playwright, Selenium & Cypress
 
@@ -101,3 +101,13 @@ await page.locator('locator').click()
 ```
 await page.click('locator')
 ```
+
+## Locating multiple elements in webpage
+
+1. structure:
+
+```
+await page.$$(loactor).
+```
+
+If no element is matching the locator so it will return empty value, it won't show any exception

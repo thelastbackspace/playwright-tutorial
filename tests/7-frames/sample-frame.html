@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main Page with Iframe</title>
+	</head>
+	<body>
+		<h1>Main Page Content</h1>
+		<div id="frame-container"></div>
+
+		<script>
+			function createFrame() {
+				const frameContainer = document.getElementById("frame-container");
+				const frameElement = document.createElement("iframe");
+				frameElement.src = "iframe.html"; // Path to your iframe content file
+				frameContainer.appendChild(frameElement);
+			}
+
+			window.onload = function () {
+				createFrame();
+			};
+		</script>
+	</body>
+</html>
